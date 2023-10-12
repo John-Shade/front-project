@@ -103,24 +103,20 @@ li.header__logo {
 }
 
 
-input {
+.menu__item {
     height: 40px;
     background-color: #F8F8F8;
     color: #7E7E82;
     font-size: 16px;
     font-family: "TT Lakes";
     border: 0px solid;
-}
-
-input:focus {
-    border: 2px solid #B8FFEC;
-    background-color: white;
-}
-
-.menu__item {
     padding: 0;
 }
 
+.menu__item:focus {
+    border: 2px solid #B8FFEC;
+    background-color: white;
+}
 
 .title {
     border-left: 4px solid #41F6D7;
