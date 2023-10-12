@@ -159,10 +159,11 @@ p {
     display: flex;
 }
 
-section {
+.content__section {
     display: flex;
     flex-flow: column;
     margin-left: 24px;
+    margin-right: 20px;
 }
 
 .content__button {
@@ -201,10 +202,6 @@ section {
 .content__text {
     max-height: 160px;
     overflow: hidden;
-}
-
-section {
-    margin-right: 20px;
 }
 
  .content__button:focus ~ .content__text {
@@ -252,7 +249,7 @@ section {
     .content {
         flex-direction: column;
     }
-    section {
+    .content__section {
         margin-right: 0;
     }
     .header__list {
