@@ -133,9 +133,10 @@ li.header__logo {
     justify-content: left;
     overflow-x: auto;
     margin-left: 24px;
+    scrollbar-width: none;
 }
 
-p {
+.content__p-text {
     padding: 0;
     margin: 0;
 }
@@ -143,10 +144,6 @@ p {
 .menu::-webkit-scrollbar {
     display: none;
 } 
-
-.menu {
-    scrollbar-width: none;
-}
 
 .content {
     padding-top: 32px;
