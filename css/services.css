@@ -80,6 +80,8 @@ li.header__logo {
     
     width: 125px;
 
+    display: none;
+
 }
 
 .header__item--with_border{
@@ -195,7 +197,7 @@ li.header__logo {
 
  .content__button:focus ~ .content__text {
     overflow: visible;
-    max-height:fit-content;
+    max-height: fit-content;
 }
 
 .content__logo { 
