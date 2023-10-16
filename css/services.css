@@ -64,7 +64,7 @@ li.header__logo {
 
 
 .header__item--with_text{
-    min-width: 170px;
+    min-width: auto;
 }
 
 .header__link-text {
