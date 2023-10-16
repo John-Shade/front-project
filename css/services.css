@@ -8,7 +8,7 @@ body {
 .header__list {
     display: flex;
     justify-content: left;
-    padding-left: 24px;
+    padding-left: 16px;
     padding-right: 8px;
     padding-top: 17px;
     margin-top: 0;
@@ -16,10 +16,6 @@ body {
     overflow-x: auto;
 
     background-color: white;
-    
-}
-
-.header__list {
     scrollbar-width: none;
 }
 
@@ -149,13 +145,14 @@ li.header__logo {
     padding-top: 32px;
     margin-right: 24px;
     display: flex;
+    flex-direction: column;
 }
 
 .content__section {
     display: flex;
     flex-flow: column;
     margin-left: 24px;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 .content__button {
@@ -192,7 +189,7 @@ li.header__logo {
 }
 
 .content__text {
-    max-height: 160px;
+    max-height: 90px;
     overflow: hidden;
 }
 
@@ -203,7 +200,11 @@ li.header__logo {
 
 .content__logo { 
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 3%;
+    height: 176px;
+    width: 320px;
 }
 
 .menu__item {
@@ -211,40 +212,39 @@ li.header__logo {
 }
 
 
+@media(min-width: 564px) {
+    .content__text {
+        max-height: 160px;
+    }
+    .content__logo {
+         width: auto;
+    }
+    .content {
+        flex-direction: row;
+    }
+    .content__section {
+        margin-right: 20px;
+    }
+    .header__list {
+        padding-left: 24px;
+    }
+}
+
 @media(min-width: 768px) {
     .content__logo {
         height: 307px;
     }
+    .header__item--with_text {
+        min-width: 170px;
+    }
+    .header__link-text {
+        display: inline;
+    }
 }
 
-@media(max-width: 768px) {
+
+@media(max-width: 768px) and (min-width: 564px) {
     .content__logo {
         height: 208px;
     }
-    .header__item--with_text {
-        min-width: auto;
-    }
-    .header__link-text {
-        display: none;
-    }
-}
-
-
-@media(max-width: 320px) {
-    .content__text {
-        max-height: 90px;
-    }
-    .content__logo {
-        height: 176px;
-        width: 320px;
-    }
-    .content {
-        flex-direction: column;
-    }
-    .content__section {
-        margin-right: 0;
-    }
-    .header__list {
-        padding-left: 16px;
-    }
-}
+} 
