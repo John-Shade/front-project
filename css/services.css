@@ -244,14 +244,38 @@ li.header__logo {
     .header__item--with_text {
         min-width: 175px;
     }
+    .header__item, .header__logo {
+        display: none;
+    }
+    .header__item--with_text {
+        display: inline;
+    }
+    .header__list  {
+        justify-content: right;
+        margin-right: 17px;
+        background-color: #F8F8F8;
+    }
     .header__link-text {
         display: inline;
     }
      .menu {
         overflow-x: none;
         flex-wrap: wrap;
-
-    }   
+        margin-right: 24px;
+        margin-left: 33px;
+    } 
+    .title {
+        position: absolute;
+        margin: 0;
+        top: 32px;
+        padding-left: 29px;
+    }
+    .content__section {
+        margin-left: 33px;
+    }
+    .content {
+        margin-right: 33px;
+    }
     
 }
 
