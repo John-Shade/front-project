@@ -73,12 +73,13 @@ li.header__logo {
     margin-right: 5px;
 
     font-size: 16px;
+    font-weight: 500;
     font-family: "TT Lakes";
     
     line-height: 24px;
     color: #1B1C21;
     
-    width: 125px;
+    width: 130px;
 
     display: none;
 
@@ -109,6 +110,9 @@ li.header__logo {
     font-family: "TT Lakes";
     border: 0px solid;
     padding: 0;
+
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .menu__item:focus {
@@ -131,6 +135,7 @@ li.header__logo {
     justify-content: left;
     overflow-x: auto;
     margin-left: 24px;
+    margin-right: 24px;
     scrollbar-width: none;
 }
 
@@ -237,11 +242,17 @@ li.header__logo {
         height: 307px;
     }
     .header__item--with_text {
-        min-width: 170px;
+        min-width: 175px;
     }
     .header__link-text {
         display: inline;
     }
+     .menu {
+        overflow-x: none;
+        flex-wrap: wrap;
+
+    }   
+    
 }
 
 
